@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2efe9;
+  color: #333;
+}
+
+/* NAVBAR */
+nav {
+  background: #5a3b2e;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO SECTION */
+header {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://upload.wikimedia.org/wikipedia/commons/7/75/Chennakesava_Temple%2C_Belur.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* SECTIONS */
+section {
+  background: white;
+  margin: 25px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  scroll-margin-top: 80px;
+}
+
+section h2 {
+  color: #5a3b2e;
+  margin-bottom: 10px;
+}
+
+/* IMAGES */
+.section-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-top: 15px;
+  display: block;
+}
+
+/* CARDS */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #f9f6f1;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  color: #5a3b2e;
+}
+
+/* BUTTON */
+button {
+  background: #5a3b2e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #3f271e;
+}
+
+/* FOOTER */
+footer {
+  background: #5a3b2e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+}
